@@ -1,0 +1,25 @@
+{
+  "name": "pizzashack",
+  "version": "1.0.0",
+  "description": "This pizza application will allow you to create your own pizza from the Pizza Shack.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+
+    "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sxiong6901/SecondProject"
+  },
+
+  "keywords": [
+    "npm",
+    "install"
+    "--save"
+  ],
+  "author": "Soua Xiong, Camilo Alvarez, Brianca Foster",
+  "license": "MIT",
+  "dependencies": {
+    "inquirer": "^6.5.0"
+  }
+}
