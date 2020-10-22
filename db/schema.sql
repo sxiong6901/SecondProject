@@ -1,13 +1,10 @@
 -- Create the database
 CREATE DATABASE pizza_db;
-USE `pizza_db`;
 
--- Create the table burgers
+-- Create the pizza table
 CREATE TABLE `sauce`
 (
-	`id` INT NOT NULL AUTO_INCREMENT,
 	`sauce_type` VARCHAR(255) NOT NULL,
-
 );
 
 CREATE TABLE `cheese`
