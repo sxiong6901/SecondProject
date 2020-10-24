@@ -80,7 +80,6 @@ body {
 }
 
 .text {
-
     color: rgb(221, 4, 4);
     font-size: 20px;
     position: absolute;
@@ -91,6 +90,27 @@ body {
     transform: translate(-50%, -50%);
     white-space: nowrap;
 }
+
+#dropdownMenuButton1 {
+float: left;
+background-color: red;
+}
+
+#dropdownMenuButton2 {
+float: right;
+background-color: red;
+}
+
+#dropdownMenuButton3 {
+    float: left;
+    background-color: red;
+}
+
+#dropdownMenuButton4 {
+    float: right;
+    background-color: red;
+}
+
 
 .overlay {
     position: absolute;
