@@ -32,9 +32,9 @@ function handleRequest(req, res) {
 
 // When someone visits the "http://localhost:8080/" path, this function is run.
 function displayRoot(res) {
-  var myHTML = "<href=/public/home.html>" +
+  var myHTML = <a href="home.html">Page 2</a> +
     "<body><h1>The Pizza Shack</h1>" +
-    "<a href='/PizzaMenu'>Pizza Menu</a>" +
+    "<a href='PizzaMenu'>Pizza Menu</a>" +
     "</body></html>";
 
   // Configure the response to return a status code of 200 (meaning everything went OK), and to be an HTML document
