@@ -69,10 +69,29 @@ body {
 
 
 b {
-    
     background-repeat: no-repeat;  
     background-attachment: fixed;  
     background-size: cover;
+}
+
+#dropdownMenuButton1 {
+float: left;
+background-color: red;
+}
+
+#dropdownMenuButton2 {
+float: right;
+background-color: red;
+}
+
+#dropdownMenuButton3 {
+    float: left;
+    background-color: red;
+}
+
+#dropdownMenuButton4 {
+    float: right;
+    background-color: red;
 }
 
 
