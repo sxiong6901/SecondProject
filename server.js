@@ -1,73 +1,41 @@
+// Require dependencies
 var http = require("http");
+var fs = require("fs");
 
+// Set our port to 8080
 var PORT = 8080;
 
 var server = http.createServer(handleRequest);
 
-// Start our server
-server.listen(PORT, function() {
-  // Callback triggered when server is successfully listening. Hurray!
-  console.log("Server listening on: http://localhost:" + PORT);
-});
-
-// Create a function which handles incoming requests and sends responses
 function handleRequest(req, res) {
 
   // Capture the url the request is made to
   var path = req.url;
 
-  // Depending on the URL, display a different HTML file.
+  // When we visit different urls, call the function with different arguments
   switch (path) {
 
-  case "/":
-    return displayRoot(res);
-
-  case "/pizzamenu":
-    return displayPortfolio(res);
+  case "/admin":
+  case "/createAccount":
+  case "/userPage":
+  case "/createpizza":
+    return renderHTML(path + ".html", res);
 
   default:
-    return display404(path, res);
+    return renderHTML("/public/home.html", res);
   }
 }
 
-// When someone visits the "http://localhost:8080/" path, this function is run.
-function displayRoot(res) {
-  var myHTML = <a href="home.html">Page 2</a> +
-    "<body><h1>The Pizza Shack</h1>" +
-    "<a href='PizzaMenu'>Pizza Menu</a>" +
-    "</body></html>";
-
-  // Configure the response to return a status code of 200 (meaning everything went OK), and to be an HTML document
-  res.writeHead(200, { "Content-Type": "text/html" });
-
-  // End the response by sending the client the myHTML string (which gets rendered as an HTML document thanks to the code above)
-  res.end(myHTML);
+// function to take a filepath and respond with html
+function renderHTML(filePath, res) {
+  return fs.readFile(__dirname + filePath, function(err, data) {
+    if (err) throw err;
+    res.writeHead(200, { "Content-Type": "text/html" });
+    res.end(data);
+  });
 }
 
-// When someone visits the "http://localhost:8080/portfolio" path, this function is run.
-function displayPortfolio(res) {
-  var myHTML = "<html>" +
-    "<body><h1>Pizza Menu</h1>" +
-    "<a script src='/'>Go Home</a>" +
-    "</body></html>";
-
-  // Configure the response to return a status code of 200 (meaning everything went OK), and to be an HTML document
-  res.writeHead(200, { "Content-Type": "text/html" });
-
-  // End the response by sending the client the myHTML string (which gets rendered as an HTML document thanks to the code above)
-  res.end(myHTML);
-}
-
-// When someone visits any path that is not specifically defined, this function is run.
-function display404(url, res) {
-  var myHTML = "<html>" +
-    "<body><h1>404 Not Found </h1>" +
-    "<p>The page you were looking for: " + url + " can not be found</p>" +
-    "</body></html>";
-
-  // Configure the response to return a status code of 404 (meaning the page/resource asked for couldn't be found), and to be an HTML document
-  res.writeHead(404, { "Content-Type": "text/html" });
-
-  // End the response by sending the client the myHTML string (which gets rendered as an HTML document thanks to the code above)
-  res.end(myHTML);
-}
+// Starts our server.
+server.listen(PORT, function() {
+  console.log("Server is listening on PORT: " + PORT);
+});
