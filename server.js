@@ -22,7 +22,7 @@ function handleRequest(req, res) {
   case "/":
     return displayRoot(res);
 
-  case "/portfolio":
+  case "/pizzamenu":
     return displayPortfolio(res);
 
   default:
@@ -32,9 +32,9 @@ function handleRequest(req, res) {
 
 // When someone visits the "http://localhost:8080/" path, this function is run.
 function displayRoot(res) {
-  var myHTML = "<html>" +
-    "<body><h1>Home Page</h1>" +
-    "<a href='/portfolio'>Portfolio</a>" +
+  var myHTML = "<public\mainpage.html>" +
+    "<body><h1>The Pizza Shack</h1>" +
+    "<a href='/portfolio'>Main Page</a>" +
     "</body></html>";
 
   // Configure the response to return a status code of 200 (meaning everything went OK), and to be an HTML document
@@ -47,7 +47,7 @@ function displayRoot(res) {
 // When someone visits the "http://localhost:8080/portfolio" path, this function is run.
 function displayPortfolio(res) {
   var myHTML = "<html>" +
-    "<body><h1>My Portfolio</h1>" +
+    "<body><h1>Pizza Menu</h1>" +
     "<a href='/'>Go Home</a>" +
     "</body></html>";
 
@@ -70,34 +70,4 @@ function display404(url, res) {
 
   // End the response by sending the client the myHTML string (which gets rendered as an HTML document thanks to the code above)
   res.end(myHTML);
-}
-
-var mysql = require("mysql");
-
-var connection = mysql.createConnection({
-  host: "localhost",
-
-  // Your port; if not 3306
-  port: 3306,
-
-  // Your username
-  user: "root",
-
-  // Your password
-  password: "Coding2020!",
-  database: "pizza_db"
-});
-
-connection.connect(function(err) {
-  if (err) throw err;
-  console.log("connected as id " + connection.threadId);
-  afterConnection();
-});
-
-function afterConnection() {
-  connection.query("SELECT * FROM products", function(err, res) {
-    if (err) throw err;
-    console.log(res);
-    connection.end();
-  });
 }

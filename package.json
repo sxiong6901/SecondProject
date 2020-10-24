@@ -6,12 +6,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-
-    "repository": {
+  "repository": {
     "type": "git",
     "url": "git+https://github.com/sxiong6901/SecondProject"
   },
-
   "keywords": [
     "npm",
     "install",
@@ -20,6 +18,8 @@
   "author": "Soua Xiong, Camilo Alvarez, Brianca Foster",
   "license": "MIT",
   "dependencies": {
-    "inquirer": "^6.5.0"
+    "helpers.js": "^1.0.0",
+    "inquirer": "^6.5.0",
+    "loader.js": "^4.7.0"
   }
 }

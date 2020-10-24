@@ -15,7 +15,7 @@ body {
 .btn1 {
     position: absolute;
     float: left;
-    top: 120%;
+    top: 90%;
     left: 10%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
@@ -31,7 +31,7 @@ body {
 .btn2 {
     position: absolute;
     float: left;
-    top: 125%;
+    top: 95%;
     left: 10%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
@@ -47,7 +47,7 @@ body {
 .btn3 {
     position: absolute;
     float: left;
-    top: 130%;
+    top: 100%;
     left: 10%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
@@ -66,12 +66,29 @@ body {
     left: 50%;
     color: white;
 }
+.container2:hover .overlay {
+    width: 100%;
+    left: 0;
+    
+    
+  }
+.stove {
+    top: 50%;
+    left: 19%;
+    position: absolute;
+    
+}
 
-
-b {
-    background-repeat: no-repeat;  
-    background-attachment: fixed;  
-    background-size: cover;
+.text {
+    color: rgb(221, 4, 4);
+    font-size: 20px;
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
 }
 
 #dropdownMenuButton1 {
@@ -95,5 +112,14 @@ background-color: red;
 }
 
 
-  
-  
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+    right: 0;
+    
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+}
