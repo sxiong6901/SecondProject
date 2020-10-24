@@ -1,42 +1,73 @@
-h1 {
+header {
+    width: 100%;
+    height: 20%;
     text-align: center;
-    font-size: 55px;
+    border-bottom: 1px solid black;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 0;
+    height: 10;
+}
+
+.btn1 {
+    position: absolute;
+    float: left;
+    top: 120%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: red;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    cursor: pointer;
+    border-radius: 5px;
+   
+}
+
+.btn2 {
+    position: absolute;
+    float: left;
+    top: 125%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: red;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    cursor: pointer;
+    border-radius: 5px;
+   
+}
+
+.btn3 {
+    position: absolute;
+    float: left;
+    top: 130%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: red;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    cursor: pointer;
+    border-radius: 5px;
+   
+}
+
+.emailForm {
+    position: absolute;
+    top: 50%;
+    left: 50%;
     color: white;
 }
 
-h3 {
-    text-align: center;
-    font-size: large;
-}
 
-p {
-    color: white;
-    text-align: center;
-    font-size: large;
-}
 
-#dropdownMenuButton1{
-float: left;
-background-color: red;
-}
-
-#dropdownMenuButton2{
-float: right;
-background-color: red;
-}
-
-#dropdownMenuButton3{
-float: right;
-background-color: red;
-}
-
-#dropdownMenuButton4{
-float: left;
-background-color: red;
-}
-body{
-    background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-}
+  
+  
