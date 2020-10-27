@@ -1,3 +1,4 @@
+  
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -6,111 +7,94 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="./css/style.css" />
+    <script src="https://kit.fontawesome.com/a0df07aebe.js" crossorigin="anonymous"></script>
     <title>Pizza Shack</title>
   </head>
 
-    <body>
-        <header>
-        <div class="tittle" style="float: left;">
-            <h1 class="display">Create Pizza</h1>
-            <p class="lead"> Let's build a Pizza!</p>
-            <p  class="lead" id="currentDay"></p>
-        </div>  
-        </header>
+  <body>
+    <header>
+      <div class="tittle">
+        <h1 class="display">Create Pizza</h1>
+        <p class="lead"> Let's build a Pizza!</p>
+        <p  class="lead" id="currentDay"></p>
+      </div>  
+    </header>
 
-        <!-- <style>
-            b {
-              background-image: url('./images/pizza-4968645_960_720.webp');
-            }
-        </style> -->
-
-
-        <div class="dropdownsauce">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Sauces
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-              <a class="dropdown-item" href="#">White Garlic Sauce</a>
-              <a class="dropdown-item" href="#">Marinara Sauce</a>
-              <a class="dropdown-item" href="#">Pesto</a>
-              <a class="dropdown-item" href="#">No Sauce</a>
-            </div>
-          </div>
-
-          <div class="dropdowncheese">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Cheeses
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
-              <a class="dropdown-item" href="#">Swiss</a>
-              <a class="dropdown-item" href="#">Mozerella</a>
-              <a class="dropdown-item" href="#">Cheddar</a>
-              <a class="dropdown-item" href="#">Provolane</a>
-              <a class="dropdown-item" href="#">Bleu Cheese</a>
-              <a class="dropdown-item" href="#">American</a>
-            </div>
-          </div>
-
-          <div class="dropdownmeat">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Meats
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton3">
-              <a class="dropdown-item" href="#">Beef</a>
-              <a class="dropdown-item" href="#">Pepperoni</a>
-              <a class="dropdown-item" href="#">Chicken</a>
-              <a class="dropdown-item" href="#">Salami</a>
-              <a class="dropdown-item" href="#">Buffalo Chicken</a>
-              <a class="dropdown-item" href="#">Shrimp</a>
-              <a class="dropdown-item" href="#">Meatball</a>
-              <a class="dropdown-item" href="#">Ham</a>
-              <a class="dropdown-item" href="#">Turkey</a>
-              <a class="dropdown-item" href="#">Roasted Chicken</a>
-            </div>
-          </div>
-
-          <div class="dropdownveggies">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Veggies
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton4">
-              <a class="dropdown-item" href="#">Tomatoes</a>
-              <a class="dropdown-item" href="#">Sweet Onions</a>
-              <a class="dropdown-item" href="#">Green Peppers</a>
-              <a class="dropdown-item" href="#">Red Peppers</a>
-              <a class="dropdown-item" href="#">Yellow Peppers</a>
-              <a class="dropdown-item" href="#">Basil</a>
-              <a class="dropdown-item" href="#">Pineapples</a>
-              <a class="dropdown-item" href="#">Red Onions</a>
-              <a class="dropdown-item" href="#">Mushrooms</a>
-              <a class="dropdown-item" href="#">Black Olives</a>
-              <a class="dropdown-item" href="#">Spinach</a>
-              <a class="dropdown-item" href="#">Jalapenos</a>
-              <a class="dropdown-item" href="#">Parsley</a>
-              <a class="dropdown-item" href="#">Oregeno</a>
-            </div>
-          </div>
+    <div class="buildPizzapic">
+      <img src="../images/pizza-4968645_960_720.webp">
+      
+      <div class="dropdownsauce">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sauces</button>
+          
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item" href="#">White Garlic Sauce</a>
+        <a class="dropdown-item" href="#">Marinara Sauce</a>
+        <a class="dropdown-item" href="#">Pesto</a>
+        <a class="dropdown-item" href="#">No Sauce</a>
+        </div>
+      </div>
         
-          <div class="cpbackground">
 
-            <img src="../images/pizza-4968645_960_720.webp" width="100%"></img>
-    
-          </div>
+      <div class="dropdowncheese">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Cheeses</button>
+              
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="#">Swiss</a>
+          <a class="dropdown-item" href="#">Mozerella</a>
+          <a class="dropdown-item" href="#">Cheddar</a>
+          <a class="dropdown-item" href="#">Provolane</a>
+          <a class="dropdown-item" href="#">Bleu Cheese</a>
+          <a class="dropdown-item" href="#">American</a>
+        </div>
+      </div>
+            
+      <div class="dropdownmeat">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Meats</button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="#">Beef</a>
+          <a class="dropdown-item" href="#">Pepperoni</a>
+          <a class="dropdown-item" href="#">Chicken</a>
+          <a class="dropdown-item" href="#">Salami</a>
+          <a class="dropdown-item" href="#">Buffalo Chicken</a>
+          <a class="dropdown-item" href="#">Shrimp</a>
+          <a class="dropdown-item" href="#">Meatball</a>
+          <a class="dropdown-item" href="#">Ham</a>
+          <a class="dropdown-item" href="#">Turkey</a>
+          <a class="dropdown-item" href="#">Roasted Chicken</a>
+        </div>
+      </div>
 
-        <!-- <div>
-            
-                <a href="./home.html" button class="btn1">Home</a>
-                <a href="./admin.html" button class="btn2" >Admin</a>
-                <a href="./createAccount.html" button class="btn3">Create Account</a>
-            
-        </div>  -->
+      <div class="dropdownveggies">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Veggies</button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="#">Tomatoes</a>
+          <a class="dropdown-item" href="#">Sweet Onions</a>
+          <a class="dropdown-item" href="#">Green Peppers</a>
+          <a class="dropdown-item" href="#">Red Peppers</a>
+          <a class="dropdown-item" href="#">Yellow Peppers</a>
+          <a class="dropdown-item" href="#">Basil</a>
+          <a class="dropdown-item" href="#">Pineapples</a>
+          <a class="dropdown-item" href="#">Red Onions</a>
+          <a class="dropdown-item" href="#">Mushrooms</a>
+          <a class="dropdown-item" href="#">Black Olives</a>
+          <a class="dropdown-item" href="#">Spinach</a>
+          <a class="dropdown-item" href="#">Jalapenos</a>
+          <a class="dropdown-item" href="#">Parsley</a>
+          <a class="dropdown-item" href="#">Oregeno</a>
+        </div>
+      </div>
+          
+      <div>
+        <a href="./index.html" button class="homeButton"><i class="fas fa-home"></i> Home</a>
+        <a href="./admin.html" button class="adminButton" > <i class="fas fa-users-cog"></i> Admin</a>
+        <a href="./userPage.html" button class="loginButton" style="top: 85%; left: 10%;"> <i class="fas fa-sign-in-alt"></i> login</a>
+        <a href="./createAccount.html" button class="createAccountbtn"> <i class="fas fa-user-plus"></i> Create Account</a>
+      </div>
+  </div>      
+</body>
+  <script src="./js/index.js"></script>
+</html>   
 
     <script src="./public/js/script.js">
    
 
-    
-    
-    </script>
-
-    </body>
-</html>    
