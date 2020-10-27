@@ -111,6 +111,10 @@ background-color: red;
     background-color: red;
 }
 
+.cpbackground{
+  background-position: center;  
+  background-size: cover;
+}
 
 .overlay {
     position: absolute;
