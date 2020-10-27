@@ -22,7 +22,7 @@ function handleRequest(req, res) {
     return renderHTML(path + ".html", res);
 
   default:
-    return renderHTML("/public/home.html", res);
+    return renderHTML("/public/index.html", res);
   }
 }
 

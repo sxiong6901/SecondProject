@@ -20,6 +20,8 @@
   "dependencies": {
     "helpers.js": "^1.0.0",
     "inquirer": "^6.5.0",
-    "loader.js": "^4.7.0"
+    "loader.js": "^4.7.0",
+    "mysql2": "^2.2.5",
+    "require": "^2.4.20"
   }
 }

@@ -12,7 +12,7 @@ body {
     height: 10;
 }
 
-.btn1 {
+.loginButton {
     position: absolute;
     float: left;
     top: 90%;
@@ -22,13 +22,27 @@ body {
     background-color: red;
     color: white;
     font-size: 16px;
-    padding: 12px 24px;
+    padding: 10px 10px;
     cursor: pointer;
     border-radius: 5px;
-   
 }
 
-.btn2 {
+.homeButton {
+    position: absolute;
+    float: left;
+    top: 90%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: red;
+    color: white;
+    font-size: 16px;
+    padding: 10px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.adminButton {
     position: absolute;
     float: left;
     top: 95%;
@@ -38,13 +52,12 @@ body {
     background-color: red;
     color: white;
     font-size: 16px;
-    padding: 12px 24px;
+    padding: 10px 10px;
     cursor: pointer;
     border-radius: 5px;
-   
 }
 
-.btn3 {
+.createAccountbtn {
     position: absolute;
     float: left;
     top: 100%;
@@ -54,51 +67,96 @@ body {
     background-color: red;
     color: white;
     font-size: 16px;
-    padding: 12px 24px;
+    padding: 10px 10px;
     cursor: pointer;
     border-radius: 5px;
-   
 }
 
-.emailForm {
+.container-small {
+    border-style: ridge;
+    margin-top: initial;
+    bottom: 30%;
+    width: 400px;
+    background-color:forestgreen;
     position: absolute;
     top: 50%;
     left: 50%;
-    color: white;
+    transform: translate(-50%, -50%);
 }
-.container2:hover .overlay {
-    width: 100%;
-    left: 0;
-    
-    
-  }
+
+.containerUser {
+    border-style: inset;
+    border-color: rgb(247, 13, 13);
+    background-color: rgb(245, 241, 241);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    bottom: 50%;
+    width: 60%;
+    height: 60%;
+}
+
+.userInfo {
+    border-style:double ;
+    border-color: rgb(10, 10, 10);
+    background-color: rgb(185, 185, 185);
+    top: 10%;
+    left: 5%;
+    width: 30%;
+    height: 80%;
+    position: absolute;
+}
+
+li {
+    top:10%;
+    left: 10%;
+    position: absolute;
+}
+
+.movingPizza:hover .overlay {
+    width: 50%;
+    height: 50%;
+    left: 26%;
+    top:40%;
+}
+
 .stove {
     top: 50%;
     left: 19%;
     position: absolute;
-    
 }
 
 .text {
     color: rgb(221, 4, 4);
     font-size: 20px;
     position: absolute;
-    top: 40%;
-    left: 30%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
+
+}
+
+.createAccountbtn {
+    position: absolute;
+    float: left;
+    top: 100%;
+    left: 10%;
     transform: translate(-50%, -50%);
-    white-space: nowrap;
+    -ms-transform: translate(-50%, -50%);
+    background-color: red;
+    color: white;
+    font-size: 16px;
+    padding: 10px 10px;
+    cursor: pointer;
+    border-radius: 5px;
 }
 
 #dropdownMenuButton1 {
-float: left;
-background-color: red;
+    float: left;
+    background-color: red;
 }
 
 #dropdownMenuButton2 {
-float: right;
-background-color: red;
+    float: right;
+    background-color: red;
 }
 
 #dropdownMenuButton3 {
@@ -111,13 +169,11 @@ background-color: red;
     background-color: red;
 }
 
-
 .overlay {
     position: absolute;
     bottom: 0;
     left: 100%;
     right: 0;
-    
     overflow: hidden;
     width: 0;
     height: 100%;
