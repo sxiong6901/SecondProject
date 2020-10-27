@@ -1,41 +1,17 @@
-// Require dependencies
-var http = require("http");
-var fs = require("fs");
+  const express = require('express');
+const path = require('path')
+const app = express();
+const port = 3000;
 
-// Set our port to 8080
-var PORT = 8080;
 
-var server = http.createServer(handleRequest);
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
+app.use('/', express.static(path.join(__dirname, 'public')))
 
-function handleRequest(req, res) {
+app.get('/', (req, res) => {
+  res.send('Hello World!')
+});
 
-  // Capture the url the request is made to
-  var path = req.url;
-
-  // When we visit different urls, call the function with different arguments
-  switch (path) {
-
-  case "/admin":
-  case "/createAccount":
-  case "/userPage":
-  case "/createpizza":
-    return renderHTML(path + ".html", res);
-
-  default:
-    return renderHTML("/public/index.html", res);
-  }
-}
-
-// function to take a filepath and respond with html
-function renderHTML(filePath, res) {
-  return fs.readFile(__dirname + filePath, function(err, data) {
-    if (err) throw err;
-    res.writeHead(200, { "Content-Type": "text/html" });
-    res.end(data);
-  });
-}
-
-// Starts our server.
-server.listen(PORT, function() {
-  console.log("Server is listening on PORT: " + PORT);
+app.listen(port, () => {
+  console.log('Example app listening on port ${port}!')
 });

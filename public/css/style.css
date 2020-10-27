@@ -169,13 +169,8 @@ li {
     background-color: red;
 }
 
-.overlay {
-    position: absolute;
-    bottom: 0;
-    left: 100%;
-    right: 0;
-    overflow: hidden;
-    width: 0;
-    height: 100%;
-    transition: .5s ease;
+=======
+.cpbackground{
+  background-position: center;  
+  background-size: cover;
 }
