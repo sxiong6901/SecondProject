@@ -19,7 +19,9 @@
   "license": "MIT",
   "dependencies": {
     "express": "^4.17.1",
+    "fs": "0.0.1-security",
     "helpers.js": "^1.0.0",
+    "http": "0.0.1-security",
     "inquirer": "^6.5.0",
     "loader.js": "^4.7.0",
     "mysql2": "^2.2.5",
