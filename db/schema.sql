@@ -1,14 +1,31 @@
 DROP DATABASE IF EXISTS pizza_db;
-
-CREATE database pizza_db;
-
+CREATE DATABASE pizza_db;
 USE pizza_db;
 
-CREATE TABLE pizza (
-  name INTEGER NOT NULL auto_increment PRIMARY KEY,
-  sauce VARCHAR(30),
-  cheese VARCHAR(30),
-  meat VARCHAR(30),
-  veggies VARCHAR(30),
-  devoured BOOLEAN DEFAULT false
-  );
+CREATE TABLE sauce(
+  id INT NOT NULL AUTO_INCREMENT,
+  sauce_type VARCHAR(50) NOT NULL,
+  devoured BOOLEAN DEFAULT false,
+  PRIMARY KEY (id)
+);
+
+CREATE TABLE cheese(
+  id INT NOT NULL AUTO_INCREMENT,
+  cheese_type VARCHAR(50) NOT NULL,
+  devoured BOOLEAN DEFAULT false,
+  PRIMARY KEY (id)
+);
+
+CREATE TABLE meat(
+  id INT NOT NULL AUTO_INCREMENT,
+  meat_type VARCHAR(50) NOT NULL,
+  devoured BOOLEAN DEFAULT false,
+  PRIMARY KEY (id)
+);
+
+CREATE TABLE veggies(
+  id INT NOT NULL AUTO_INCREMENT,
+  veggies_type VARCHAR(50) NOT NULL,
+  devoured BOOLEAN DEFAULT false,
+  PRIMARY KEY (id)
+);
