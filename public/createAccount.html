@@ -14,8 +14,7 @@
     <header>
     <div class="tittle">
       <h1 class="display"> <i class="fas fa-user-plus"></i> Create an Account</h1>
-      <p class="lead"> </p>
-      <p  class="lead" id="currentDay"></p>
+      <p class="lead"> Create an Account </p>
     </div>  
     </header>
 
@@ -24,29 +23,29 @@
         <img src="./images/pizzaaccount.jpg" alt="pizzapic" width="100%"></img>
         <a href="./index.html" button class="homeButton"> <i class="fas fa-home"></i> Home</a>
         <a href="./admin.html" button class="adminButton" > <i class="fas fa-users-cog"></i> Admin</a>
-        <a href="./userPage.html" button class="loginButton" style="top: 100%; left: 10%;"> <i class="fas fa-sign-in-alt"></i> login</a>
+        <a href="./userPage.html" button id="loginButton" style="top: 100%; left: 10%;"> <i class="fas fa-sign-in-alt"></i> login</a>
         </img>
       </div>
           
-      <div class="container-small">
-        <div class="emailForm">
-          <h2>Sign Up</h2>
-          <form action="./userPage.html">
-            <label for="fname">First name:</label>
-            <input type="text" id="fname" name="fname" value="John">
-            <br><br>
-            <label for="lname">Last name:</label>
-            <input type="text" id="lname" name="lname" value="Doe">
-            <br><br>
-            <label for="text"> Enter Email:</label>
-            <input type="email" id="email"><br><br>
-            <input type="submit" value="Submit">
-            
-            
-          </form>
-        </div>   
-      </div>
-    </div> 
+      <form action="./userPage.html">
+        <div class="clearfix">
+          <div class="card">
+            <h2>Sign Up</h2>
+            <form method="POST">
+              <div class="input-group">
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email" placeholder="johndoe@mail.com" />
+              </div>
+              <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" placeholder="supersecure123" />
+              </div>
+              <div id="msg"></div>
+              <button id="sign-up">Sign Up</button>
+            </form>
+          </div>
+        </form>  
+      </div> 
             
             
               

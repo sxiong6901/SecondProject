@@ -12,7 +12,7 @@ body {
     height: 10;
 }
 
-.loginButton {
+#loginButton {
     position: absolute;
     float: left;
     top: 90%;
@@ -76,7 +76,8 @@ body {
     border-style: ridge;
     margin-top: initial;
     bottom: 30%;
-    width: 400px;
+    height: 200px;
+    width: 500px;
     background-color:forestgreen;
     position: absolute;
     top: 50%;
@@ -127,62 +128,7 @@ li {
     position: absolute;
 }
 
-
-.btn1 {
-    position: absolute;
-    float: left;
-    top: 90%;
-    left: 10%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    background-color: red;
-    color: white;
-    font-size: 16px;
-    padding: 12px 24px;
-    cursor: pointer;
-    border-radius: 5px;
-   
-}
-
-.btn2 {
-    position: absolute;
-    float: left;
-    top: 95%;
-    left: 10%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    background-color: red;
-    color: white;
-    font-size: 16px;
-    padding: 12px 24px;
-    cursor: pointer;
-    border-radius: 5px;
-   
-}
-
-.btn3 {
-    position: absolute;
-    float: left;
-    top: 100%;
-    left: 10%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    background-color: red;
-    color: white;
-    font-size: 16px;
-    padding: 12px 24px;
-    cursor: pointer;
-    border-radius: 5px;
-   
-}
-
-.emailForm {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    color: white;
-}
-.container2:hover .overlay {
+.makePizza:hover .overlay {
     width: 100%;
     left: 0;    
 }
@@ -228,8 +174,8 @@ background-color: red;
     color: rgb(221, 4, 4);
     font-size: 20px;
     position: absolute;
-    top: 40%;
-    left: 30%;
+    top: 48%;
+    left: 33%;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
@@ -250,4 +196,129 @@ background-color: red;
     padding: 10px 10px;
     cursor: pointer;
     border-radius: 5px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h2 {
+  font-size: 3em;
+  margin: 0px;
+  margin-top: 0.45em;
+  margin-bottom: 0.45em;
+}
+
+button {
+  background-color: red;
+  border-radius: 8px;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  font-size: 1.2em;
+  letter-spacing: 0.21px;
+  line-height: 16px;
+  max-width: 255px;
+  padding: 20px 52px;
+  text-align: center;
+  transition-duration: 0.15s;
+  transition-property: background-color;
+  transition-timing-function: linear;
+  margin-top: 0.6em;
+  float: right;
+}
+
+button:hover {
+  background-color: #0288d1;
+}
+
+.input-group {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+label {
+  color: #212121;
+}
+
+input {
+  background-color: #f1f3f4;
+  border-radius: 2px;
+  border-width: 0;
+  color: #5f6368;
+  font-size: 1em;
+  height: 45px;
+  line-height: 20px;
+  margin: 0;
+  margin-top: 10px;
+  max-width: 100%;
+  padding: 8px 8px 8px 8px;
+  transition-delay: 0s, 0s;
+  transition-duration: 0.2s, 0.2s;
+  transition-property: background-color, color;
+  transition-timing-function: ease, ease;
+  vertical-align: middle;
+  width: 100%;
+}
+
+input:hover {
+  background-color: #e8eaed;
+}
+
+.card {
+  background-color: rgb(80, 80, 80);
+  border: 1px solid #eceff1;
+  border-radius: 8px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0 1px 2px 0,
+    rgba(60, 64, 67, 0.15) 0 1px 3px 1px;
+  margin: 2%;
+  margin-top: 80px;
+  padding: 20px;
+  width: 46%;
+  overflow: hidden;
+  position: absolute;
+  transform: translate(60%, -220%);
+}
+
+.lastUsercard {
+    background-color: rgb(207, 50, 50);
+    border-style: double yellow;
+    border-radius: 8px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0 1px 2px 0,
+      rgba(60, 64, 67, 0.15) 0 1px 3px 1px;
+    margin: 2%;
+    margin-top: 80px;
+    padding: 20px;
+    width: 46%;
+    overflow: hidden;
+    position: absolute;
+    transform: translate(60%, -290%);
+}
+
+.card::after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+#msg {
+  visibility: hidden;
+  margin-top: 20px;
+  font-weight: 700;
+  height: 1.2em;
+  font-size: 1.2em;
+}
+
+#msg.success,
+#msg.error {
+  visibility: visible;
+}
+
+#msg.success {
+  color: #52b155;
+}
+
+#msg.error {
+  color: #e6252c;
 }
