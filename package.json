@@ -18,10 +18,9 @@
   "author": "Soua Xiong, Camilo Alvarez, Brianca Foster",
   "license": "MIT",
   "dependencies": {
+    "express": "^4.17.1",
     "helpers.js": "^1.0.0",
     "inquirer": "^6.5.0",
-    "loader.js": "^4.7.0",
-    "mysql2": "^2.2.5",
-    "require": "^2.4.20"
+    "loader.js": "^4.7.0"
   }
 }
