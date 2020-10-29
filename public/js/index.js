@@ -1,11 +1,5 @@
 var inquirer = require("inquirer");
 var fs = require('fs');
-var emailInput = document.querySelector("#email");
-var passwordInput = document.querySelector("#password");
-var signUpButton = document.querySelector("#sign-up");
-var msgDiv = document.querySelector("#msg");
-var userEmailSpan = document.querySelector("#user-email");
-var userPasswordSpan = document.querySelector("#user-password");
 
 inquirer.prompt([
   {
@@ -49,46 +43,15 @@ inquirer.prompt([
   });
 });
 
+// Get the modal
+var modal = document.getElementById('id01');
 
-
-renderLastRegistered();
-
-function displayMessage(type, message) {
-  msgDiv.textContent = message;
-  msgDiv.setAttribute("class", type);
-}
-
-function renderLastRegistered() {
-  var email = localStorage.getItem("email");
-  var password = localStorage.getItem("password");
-
-  if (!email || !password) {
-    return;
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
   }
-
-  userEmailSpan.textContent = email;
-  userPasswordSpan.textContent = password;
 }
-
-signUpButton.addEventListener("click", function(event) {
-  event.preventDefault();
-
-  var email = document.querySelector("#email").value;
-  var password = document.querySelector("#password").value;
-
-  if (email === "") {
-    displayMessage("error", "Email cannot be blank");
-  } else if (password === "") {
-    displayMessage("error", "Password cannot be blank");
-  } else {
-    displayMessage("success", "Registered successfully");
-
-    localStorage.setItem("email", email);
-    localStorage.setItem("password", password);
-    renderLastRegistered(); 
-  }
-});
-
 
 
 ///////////////////////////////////////////////////////////////////////////////
