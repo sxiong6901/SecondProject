@@ -13,7 +13,7 @@ const connection = mysql.createConnection({
   host: 'localhost',
   port: 3306,
   user: 'root',
-  password: process.env.PASSWORD,
+  password: 'Coding2020!',
   database: 'pizza_db'
 })
 
