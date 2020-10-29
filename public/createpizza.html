@@ -1,10 +1,12 @@
   
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="./css/style.css" />
     <script src="https://kit.fontawesome.com/a0df07aebe.js" crossorigin="anonymous"></script>
@@ -13,93 +15,41 @@
 
   <body>
     <header>
-      <div class="title"style="color:White">
         <h1 class="display">Create Pizza</h1>
         <p class="lead"> Let's build a Pizza!</p>
-      </div>  
     </header>
 
+    <p class=buttondropdown>
+      <select name="Sauce" id="Sauce">
+        <option value="Tomato">Tomato</option>
+        <option value="White Garlic">White Garlic</option>
+        <option value="Buffalo">Buffalo</option>
+      </select>
 
+      <select name="Cheese" id="Cheese">
+        <option value="Mozarella">Mozzarella</option>
+        <option value="Cheddar">Cheddar</option>
+        <option value="American">American</option>
+      </select>
 
-    <div class="buildPizzapic">
+      <select name="Meat" id="Meat">
+        <option value="Beef">Beef</option>
+        <option value="Pepperoni">Pepperoni</option>
+        <option value="Ham">Ham</option>
+        <option value="Bacon">Bacon</option>
+      </select>
+
+      <select name="Veggies" id="Veggies">
+        <option value="Green Bell Pepper">Green Bell Pepper</option>
+        <option value="Mushroom">Mushroom</option>
+        <option value="Onion">Onion</option>
+      </select>
       
-      
-      <div class="dropdownsauce">
-        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sauces</button>
-          
-      <p><div class="dropdown-menu" aria-labelledby="dropdownMenuButton"></p>
-        <a class="dropdown-item" href="#">White Garlic Sauce</a>
-        <a class="dropdown-item" href="#">Marinara Sauce</a>
-        <a class="dropdown-item" href="#">Pesto</a>
-        <a class="dropdown-item" href="#">No Sauce</a>
-        </div>
-      </div>
-
-      <div class="dropdown2">
-        
-        <select name="Cheese" id="Cheese">
-          <option value="Swiss">Swiss</option>
-          <option value="Mozarella">Mozzarella</option>
-          <option value="Cheddar">Cheddar</option>
-          <option value="Provolone">Provolone</option>
-          <option value="Blue Cheese">Blue Cheese</option>
-          <option value="American">American</option>
-        </select>
-        </div>
-      </div>
-
-
-      <div class="dropdown3">
-        <button onclick="myFunction()" class="dropbtn" id="dropdownMenuButton3">Meats<i class="fa fa-caret-down"></i></button>
-        <div id="myDropdown3" class="dropdown-content">
-          <a class="dropdown-item" href="#">Beef</a>
-          <a class="dropdown-item" href="#">Pepperoni</a>
-          <a class="dropdown-item" href="#">Chicken</a>
-          <a class="dropdown-item" href="#">Salami</a>
-          <a class="dropdown-item" href="#">Buffalo Chicken</a>
-          <a class="dropdown-item" href="#">Shrimp</a>
-          <a class="dropdown-item" href="#">Meatball</a>
-          <a class="dropdown-item"href="#">Ham</a>
-          <a class="dropdown-item" href="#">Turkey</a>
-          <a class="dropdown-item" href="#">Roasted Chicken</a>
-        </div>
-      </div>
-
-      <div class="dropdown4">
-        <button onclick="myFunction()" class="dropbtn" id="dropdownMenuButton4">Veggies<i class="fa fa-caret-down"></i></button>
-        <div id="myDropdown4" class="dropdown-content">
-          <a class="dropdown-item" href="#">Tomatoes</a>
-          <a class="dropdown-item" href="#">Sweet Onions</a>
-          <a class="dropdown-item" href="#">Green Peppers</a>
-          <a class="dropdown-item" href="#">Red Peppers</a>
-          <a class="dropdown-item" href="#">Yellow Peppers</a>
-          <a class="dropdown-item" href="#">Basil</a>
-          <a class="dropdown-item" href="#">Pineapples</a>
-          <a class="dropdown-item" href="#">Red Onions</a>
-          <a class="dropdown-item" href="#">Mushrooms</a>
-          <a class="dropdown-item" href="#">Black Olives</a>
-          <a class="dropdown-item" href="#">Spinach</a>
-          <a class="dropdown-item" href="#">Jalapenos</a>
-          <a class="dropdown-item" href="#">Parsley</a>
-          <a class="dropdown-item" href="#">Oregeno</a>
-        </div>
-      </div>
-    </nav>
-
-
-        <img src="./images/pizza-4968645_960_720.webp" alt="pizzapic" width="100%"> </img>
-
-      </div>
-          
       <div>
-        <a href="./index.html" button class="homeButton"><i class="fas fa-home"></i> Home</a>
-      </div>
-  </div>      
-</body>
-  <script src="./js/index.js"></script>
-</html>   
+              <a href="./index.html" button class="homeButton"><i class="fas fa-home"></i> Home</a>
+      </div>     
+    </p>
 
-
-    <script src="./public/js/script.js">
-
-   
+  <span class="dot"></span>
+  </body>
+</html>
