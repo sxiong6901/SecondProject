@@ -19,10 +19,9 @@
   "author": "Soua Xiong, Camilo Alvarez, Brianca Foster",
   "license": "MIT",
   "dependencies": {
+    "dotenv": "^8.2.0",
     "express": "^4.17.1",
-    "loader.js": "^4.7.0",
-    "package.json": "^2.0.1",
-    "parser.js": "^1.0.0"
+    "package.json": "^2.0.1"
   },
   "bugs": {
     "url": "https://github.com/sxiong6901/SecondProject/issues"
