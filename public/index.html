@@ -19,12 +19,12 @@
     </header>
 
     <div>
-      <img src="./images/pizzawhitebgrd.jpg" alt="pizzapic" width="100%"> </img>
+      <img src="./images/pizzawhitebgrd.jpg" alt="pizzapic" width="100%"></img>
     </div>
 
     <div>
       <a href="./userPage.html" button id="loginButton"> <i class="fas fa-sign-in-alt"></i> Login</a>
-      <a href="./admin.html" button class="adminButton" ><i class="fas fa-users-cog"></i> </i> Admin</a>
+      
       <a href="./createAccount.html" button class="createAccountbtn"> <i class="fas fa-user-plus"></i> Create Account</a>
     </div> 
 
@@ -35,9 +35,43 @@
         
       </div>
     </div>
+
+<!-- Button to open the modal login form -->
+<button class="adminButton" onclick="document.getElementById('id01').style.display='block'"><i class="fas fa-users-cog"></i> Admin</button>
+
+<!-- The Modal -->
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'"
+class="close" title="Close Modal">&times;</span>
+
+  <!-- Modal Content -->
+  <form class="modal-content animate" action="./admin.html">
+    <div class="imgcontainer">
+      <img src="./images/alberteinstien.jpg" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Admin</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <button class="modalLoginbtn" type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
         
   </body>
   
-  <script src="./js/script.js"></script>
+  <script src="./js/index.js"></script>
   <footer></footer>
 </html> 
