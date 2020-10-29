@@ -435,18 +435,9 @@ span.psw {
     width: 50%; /* Could be more or less, depending on screen size */
 }
 
-.dot {
-  height: 600px;
-  width: 600px;
-  background-color: tan;
-  border-radius: 50%;
-  display: inline-block;
-  justify-content:center
-}
-
-span.dot {
-  display:block;
-  float:right;
-  margin:100px 650px;
-  padding:5px 10px
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
