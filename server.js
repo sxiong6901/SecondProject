@@ -1,3 +1,4 @@
+  const express = require('express');
 require('dotenv').config()
 const express = require('express');
 const path = require('path')
@@ -45,5 +46,6 @@ app.get('/', (req, res) => {
 });
 
 app.listen(port, () => {
+  console.log('Example app listening on port ${port}!')
   console.log('Connected to The Pizza Shack on port 3000')
 });
