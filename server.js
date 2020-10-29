@@ -1,5 +1,3 @@
-  const express = require('express');
-require('dotenv').config()
 const express = require('express');
 const path = require('path')
 const mysql = require('mysql');
@@ -23,18 +21,7 @@ connection.connect((err) => {
   log(`connection thread is ${connection.threadId}`);
 })
 
-const onConnection = () => {
-  return new Promise ((resolve, rejects) => {
-    connection.query("SELECT * FROM pizza", (err, result) => {
-      if (err) {
-        log(err)
-        rejects(err)
-      }
-      log(result)
-      resolve(result)
-    })
-  })
-}
+app
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());

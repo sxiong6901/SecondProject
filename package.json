@@ -1,8 +1,15 @@
 {
-  "name": "pizzashack",
+  "name": "thepizzashack",
   "version": "1.0.0",
-  "description": "This pizza application will allow you to create your own pizza from the Pizza Shack.",
+  "description": "This application will allow you to create your own pizza",
   "main": "server.js",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "fs": "^0.0.1-security",
+    "http": "^0.0.1-security"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
@@ -12,31 +19,12 @@
     "url": "git+https://github.com/sxiong6901/SecondProject.git"
   },
   "keywords": [
-    "npm",
-    "install",
-    "--save"
+    "pizza"
   ],
   "author": "Soua Xiong, Camilo Alvarez, Brianca Foster",
   "license": "MIT",
-  "dependencies": {
-    "dotenv": "^8.2.0",
-    "express": "^4.17.1",
-<<<<<<< HEAD
-    "fs": "0.0.1-security",
-    "helpers.js": "^1.0.0",
-    "http": "0.0.1-security",
-    "inquirer": "^6.5.0",
-    "loader.js": "^4.7.0",
-    "mysql2": "^2.2.5",
-    "require": "^2.4.20"
-  }
-=======
-    "package.json": "^2.0.1"
-  },
   "bugs": {
     "url": "https://github.com/sxiong6901/SecondProject/issues"
   },
-  "homepage": "https://github.com/sxiong6901/SecondProject#readme",
-  "devDependencies": {}
->>>>>>> ae40fcc2cbec6b473c512ab837627dfe9a6d862f
+  "homepage": "https://github.com/sxiong6901/SecondProject#readme"
 }
