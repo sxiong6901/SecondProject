@@ -16,6 +16,20 @@ const connection = mysql.createConnection({
   database: 'pizza_db'
 })
 
+$("#Sauce").on("click",function(event) {
+  event.preventDefault();
+var pizzasauce = document.getElementById("Sauce").value
+if (pizzasauce = "Tomato") {
+  var img = new Image(); 
+  var div = document.getElementById('pizzcrust'); 
+ 
+img.onload = function() { 
+  div.appendChild(img); 
+}; 
+ 
+img.src = './images/download.jpg' 
+}});
+
 connection.connect((err) => {
   if (err) throw err
   log(`connection thread is ${connection.threadId}`);

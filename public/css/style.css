@@ -441,3 +441,18 @@ span.psw {
   margin-right: auto;
   width: 50%;
 }
+
+.button {
+  background-color: red;
+  color: #FFFFFF;
+  float: right;
+  padding: 10px;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+}
+
+.tab {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
