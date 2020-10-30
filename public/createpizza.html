@@ -19,42 +19,52 @@
         <p class="lead"> Let's build a Pizza!</p>
     </header>
 
-    
-    <p class=buttondropdown>
+    <form id="myForm"></form>
+    <pre class="tab">
       <select name="Sauce" id="Sauce">
         <option value="Tomato">Tomato</option>
         <option value="White Garlic">White Garlic</option>
         <option value="Buffalo">Buffalo</option>
       </select>
+    </pre>
 
+    <pre class="tab">
       <select name="Cheese" id="Cheese">
         <option value="Mozarella">Mozzarella</option>
         <option value="Cheddar">Cheddar</option>
         <option value="American">American</option>
       </select>
+    </pre>
 
+    <pre class="tab">
       <select name="Meat" id="Meat">
         <option value="Beef">Beef</option>
         <option value="Pepperoni">Pepperoni</option>
         <option value="Ham">Ham</option>
         <option value="Bacon">Bacon</option>
       </select>
+    </pre>
 
+    <pre class="tab">
       <select name="Veggies" id="Veggies">
         <option value="Green Bell Pepper">Green Bell Pepper</option>
         <option value="Mushroom">Mushroom</option>
         <option value="Onion">Onion</option>
       </select>
-      
+    </pre>
+    </form>
+    
       <div>
               <a href="./index.html" button class="homeButton"><i class="fas fa-home"></i> Home</a>
       </div>     
     </p>
+    <hr>
+    <input type="button" class= "button" onclick="myFunction()" value="Reset">
 
-<p class="pizzaimg"><img src="./images/65-650648_transparent-cheese-clip-art-cheese-pizza-clipart-hd.png" alt="pizzacrust" class="center" ></p>
+<p class="pizzacrust"><img src="./images/65-650648_transparent-cheese-clip-art-cheese-pizza-clipart-hd.png" alt="pizzacrust" class="center" ></p>
 
 
 
   </body>
-  <script src="./js/script.js"></script>
+  <script src="../server.js"></script>
 </html>
