@@ -454,5 +454,6 @@ span.psw {
 
 .tab {
   margin-top: 2rem;
-  margin-bottom: 1rem;
+  float: inline-start;
+  height: 10mm;
 }

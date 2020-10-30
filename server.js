@@ -16,19 +16,12 @@ const connection = mysql.createConnection({
   database: 'pizza_db'
 })
 
-$("#Sauce").on("click",function(event) {
-  event.preventDefault();
-var pizzasauce = document.getElementById("Sauce").value
-if (pizzasauce = "Tomato") {
-  var img = new Image(); 
-  var div = document.getElementById('pizzcrust'); 
+var img = document.createElement("img"); 
  
-img.onload = function() { 
-  div.appendChild(img); 
-}; 
+img.src = "image.png"; 
+var src = document.getElementById("x"); 
  
-img.src = './images/download.jpg' 
-}});
+src.appendChild(img); 
 
 connection.connect((err) => {
   if (err) throw err
