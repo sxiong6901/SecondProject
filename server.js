@@ -1,49 +1,29 @@
-require('dotenv').config()
-const express = require('express');
-const path = require('path')
-const mysql = require('mysql');
-const { response } = require('express');
-const { resolve } = require('path');
-const { rejects } = require('assert');
-const app = express();
-const port = 3000;
-const log = (msg) => console.log(msg)
+var express = require("express");
 
-const connection = mysql.createConnection({
-  host: 'localhost',
-  port: 3306,
-  user: 'root',
-  password: 'Coding2020!',
-  database: 'pizza_db'
-})
+var PORT = process.env.PORT || 8080;
 
-connection.connect((err) => {
-  if (err) throw err
-  log(`connection thread is ${connection.threadId}`);
-})
+var app = express();
 
-const onConnection = () => {
-  return new Promise ((resolve, rejects) => {
-    connection.query("SELECT * FROM pizza", (err, result) => {
-      if (err) {
-        log(err)
-        rejects(err)
-      }
-      log(result)
-      resolve(result)
-    })
-  })
-}
+// Serve static content for the app from the "public" directory in the application directory.
+app.use(express.static("public"));
 
+// Parse application body
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-app.use('/', express.static(path.join(__dirname, 'public')))
 
+// Set Handlebars.
+var exphbs = require("express-handlebars");
 
-app.get('/', (req, res) => {
-  res.send('Welcome to The Pizza Shack')
-});
+app.engine("handlebars", exphbs({ defaultLayout: "main" }));
+app.set("view engine", "handlebars");
 
-app.listen(port, () => {
-  console.log('Connected to The Pizza Shack on port 3000')
+// Import routes and give the server access to them.
+var routes = require("./controllers/pizzas_controller.js");
+
+app.use(routes);
+
+// Start our server so that it can begin listening to client requests.
+app.listen(PORT, function() {
+  // Log (server-side) when our server has started
+  console.log("Server listening on: http://localhost:" + PORT);
 });
