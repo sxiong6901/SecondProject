@@ -445,15 +445,9 @@ span.psw {
 .button {
   background-color: red;
   color: #FFFFFF;
-  float: right;
   padding: 10px;
   border-radius: 10px;
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
 }
 
-.tab {
-  margin-top: 2rem;
-  float: inline-start;
-  height: 10mm;
-}
