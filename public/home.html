@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+    <script src="https://kit.fontawesome.com/a0df07aebe.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css"   href="public\css\style.css">
+    <title>Your One and Only Pizza Shack</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="title">
+        <h1 class="display"><i class="fas fa-pizza-slice"></i>Welcome to Pizza Shack</h1>
+      </div>  
+    </header>
+
+    <div>
+      <img src="\img\/pizzawhitebgrd.jpg" alt="pizzapic" width="100%"></img>
+    </div>
+
+    <div>
+      <a href="#" button id="loginButton"> <i class="fas fa-sign-in-alt"></i> Login</a>
+      
+      
+      <a href="#" button class="createAccountbtn"> <i class="fas fa-user-plus"></i> Create Account</a>
+    </div> 
+
+    <div class="makePizza">
+      <img src="\img\gas-stove(1).png" alt="Avatar" class="stove">
+      <div class="overlay">
+        <div class="text"><img src="\img\pizza-five-eighths(10).png" alt="Avatar" class="smallpizza" ><a href="http://localhost:8080/" target="_blank">Order</a></div>
+        
+      </div>
+    </div>
+
+<!-- Button to open the modal login form -->
+<button class="adminButton" onclick="document.getElementById('id01').style.display='block'"><i class="fas fa-users-cog"></i> Admin</button>
+
+<!-- The Modal -->
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'"
+class="close" title="Close Modal">&times;</span>
+
+  <!-- Modal Content -->
+  <form class="modal-content animate" action="./admin.html">
+    <div class="imgcontainer">
+      <img src="\img\alberteinstien.jpg" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Admin</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <button class="modalLoginbtn" type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw"><a href="#">Forgot password?</a></span>
+    </div>
+  </form>
+</div>
+        
+  </body>
+
+  
+  <footer></footer>
