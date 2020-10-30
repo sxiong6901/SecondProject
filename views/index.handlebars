@@ -1,0 +1,86 @@
+<container>
+
+
+  <div class="row">
+
+    <div class="col-12 col-sm-10 offset-sm-1 col-md-6 offset-md-0 col-lg-5 offset-lg-1 col-xl-4 offset-xl-2">
+      <div class="card" id="order">
+        <div class="card-header text-center text-danger">
+          <h2><b>Menu</b></h2>
+        </div>
+        <form class="create-form order ">
+          <div class="form-group">
+            <label for="pizza">Pizza</label>
+            <br>
+            <select name="Sauce" id="Sauce">
+              <option value="Pepperoni">Pepperoni Pizza</option>
+              <option value="New York Style">New York Style Pizza</option>
+              <option value="Buffalo Chicken">Buffalo Chicken</option>
+              <option value="Meat Lover">Meat Lover</option>
+              <option value="Hawaiian">Hawaiian</option>
+              <option value="Cheese">Cheese</option>
+              <option value="Veggie">Veggie</option>              
+            </select> 
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="col-12 col-sm-10 offset-sm-1 col-md-6 offset-md-0 col-lg-5 col-xl-4">
+      <div class="card">
+        <div class="card-header text-center text-danger">
+          <h2><b>Place Your Order</b></h2>
+        </div>
+        <form class="create-form order ">
+          <div class="form-group">
+            <label for="pizza">What Pizza would you like to order?</label>
+            <br>
+            <input type="text" id="pizza" name="name">
+          </div>
+          <div class="form-group">
+            <label for="devour">Ready for checkout?</label>
+            <br />
+            <input class="debour" type="radio" name="devour" value="0"> Add to Cart
+          </div>
+          <button class="btn btn-danger" id="submit" type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  
+  </div>
+
+
+
+  <div class="row">
+    <div class="col-12 col-sm-10 offset-sm-1 col-md-6 offset-md-0 col-lg-5 offset-lg-1 col-xl-4 offset-xl-2">
+      <div class="card">
+        <div class="card-header text-center text-danger">
+          <h2><b>Cart</b></h2>
+        </div>
+        <ul class="list-group list-group-flush">
+          {{#each pizza}}
+          {{#unless this.devoured}}
+          <div class="item"><img class="slice" src="public/img/slice.png"> {{this.name}}
+            <button class="buy btn btn-danger" data-id={{this.id}} data-state={{this.devoured}}> BUY</button>
+          </div>
+          {{/unless}}
+          {{/each}}
+        </ul>
+      </div>
+    </div>
+    <div class="col-12 col-sm-10 offset-sm-1 col-md-6 offset-md-0 col-lg-5 col-xl-4">
+      <div class="card">
+        <div class="card-header text-center text-danger">
+          <h2><b>Order History</b> </h2>
+        </div>
+        <ul class="list-group list-group-flush">
+          {{#each pizza}}
+          {{#if this.devoured}}
+          <div class="item"><img class="slice" src="/public/img/slice.png">{{this.name}}</div>
+          {{/if}}
+          {{/each}}
+        </ul>
+      </div>
+    </div>
+  </div>
+</container>

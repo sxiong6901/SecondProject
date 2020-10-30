@@ -1,0 +1,103 @@
+body {
+    background-image: url('../img/accountpizza.jpg');
+    margin-bottom: 40px;
+}
+.buy {
+    width:100px;
+    float:right;
+    border:2px solid black;
+    margin:5px 20px 5px 0;
+    background-color: red;
+}
+.slice{
+    width: 50px;
+    margin: 0 10px 0 20px;
+}
+
+.jumbotron {
+    height: 35vh;
+    overflow: hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    margin-bottom: 0;
+}
+
+.card {
+  margin-top: 20px;
+  background-color: #FAFAD2;
+  border: 5px solid rgb(44, 42, 42);
+  border-radius: 10px;
+  box-shadow: 4px 3px black;
+  padding-bottom: 5px;
+  word-wrap: break-word;
+}
+
+p, h1, h2, .create-form, .card {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.item {
+    background-color: #FAFAD2;
+}
+.card-header {
+    background-color: olivedrab;
+    margin-bottom: 5px;
+    text-shadow: 1px 1px black, -1px 1px black, 1px -1px black, -1px -1px black, 2px 2px black;
+    border-bottom: 2px solid black;
+}
+
+.order {
+    text-align: center;
+    margin: auto;
+    padding: 10px 5px;
+}
+
+
+.list {
+    width: 30px;
+}
+
+#pizza {
+    margin-left: 5px;
+}
+.devour {
+    margin-left: 5px;
+}
+#submit {
+    border:2px solid black;
+    background-color: red;
+}
+
+#pizza {
+    width: 300px;
+    margin: 0 5px;
+}
+#order{
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.title{
+    text-shadow: 1px 1px black, -1px 1px black, 1px -1px black, -1px -1px black, 2px 2px black;
+}
+
+#pizzaimg {
+    width: 40px;
+    margin: 0 7px;
+}
+
+.homeButton {
+    position: absolute;
+    float: left;
+    margin-left:600px ;
+    margin-top: 25px;
+    background-color: red;
+    color: white;
+    font-size: 16px;
+    padding: 20px 20px;
+    cursor: pointer;
+    border-radius: 15px;
+    text-align: center;
+}
