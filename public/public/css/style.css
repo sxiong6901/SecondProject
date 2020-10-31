@@ -123,13 +123,6 @@ body {
     height: 80%;
     position: absolute;
 }
-
-li {
-    top:10%;
-    left: 10%;
-    position: absolute;
-}
-
 .movingPizza:hover .overlay {
     width: 50%;
     height: 50%;
@@ -139,7 +132,7 @@ li {
 
 .stove {
     top: 50%;
-    left: 19%;
+    left: 23%;
     position: absolute;
 }
 
@@ -326,4 +319,20 @@ span.psw {
   border-radius: 10px;
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)}
+  to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+  from {transform: scale(0)}
+  to {transform: scale(1)}
 }
