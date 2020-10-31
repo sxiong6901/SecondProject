@@ -123,13 +123,6 @@ body {
     height: 80%;
     position: absolute;
 }
-
-li {
-    top:10%;
-    left: 10%;
-    position: absolute;
-}
-
 .movingPizza:hover .overlay {
     width: 50%;
     height: 50%;
