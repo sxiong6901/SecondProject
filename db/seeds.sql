@@ -1,10 +1,7 @@
-INSERT INTO pizza (sauce, cheese, meat, veggies, devoured) 
-	VALUES ('tomato', 'mozzarella', 'pepperoni', 'mushroom', false);
-
-INSERT INTO pizza (sauce, cheese, meat, veggies, devoured) 
-	VALUES ('alfredo', 'cheddar', 'chicken', 'broccoli', false);
-    
-INSERT INTO pizza (sauce, cheese, meat, veggies, devoured) 
-	VALUES ('tomato', 'mozzarella', 'pepperoni', 'mushroom', false);
-    
-SELECT * FROM pizza;
+INSERT INTO pizzas (name) VALUES ('Pepperoni');
+INSERT INTO pizzas (name) VALUES ('Classic Cheese');
+INSERT INTO pizzas (name) VALUES ('Hawaiian');
+INSERT INTO pizzas (name) VALUES ('Meat Combo');
+INSERT INTO pizzas (name) VALUES ('Chicken Pesto');
+INSERT INTO pizzas (name, devoured) VALUES ('Veggie Combo', true);
+INSERT INTO pizzas (name, devoured) VALUES ('Sausage & Bacon', true);
