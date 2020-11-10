@@ -61,7 +61,7 @@
         <ul class="list-group list-group-flush">
           {{#each pizza}}
           {{#unless this.devoured}}
-          <div class="item"><img class="slice" src="public/img/slice.png"> {{this.name}}
+          <div class="item"> {{this.name}}
             <button class="buy btn btn-danger" data-id={{this.id}} data-state={{this.devoured}}> BUY</button>
           </div>
           {{/unless}}
@@ -77,7 +77,7 @@
         <ul class="list-group list-group-flush">
           {{#each pizza}}
           {{#if this.devoured}}
-          <div class="item"><img class="slice" src="/public/img/slice.png">{{this.name}}</div>
+          <div class="item">{{this.name}}</div>
           {{/if}}
           {{/each}}
         </ul>
